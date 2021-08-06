@@ -159,7 +159,7 @@ input::-webkit-search-results-decoration {
   display: flex;
   align-items: center;
   height: 660px;
-  background: url(blog/img2.png) no-repeat 50% 50%;
+  background: url(Blog/img2.png) no-repeat 50% 50%;
 }
 
 .container-main {
