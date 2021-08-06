@@ -1,0 +1,281 @@
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Quattrocento Sans", sans-serif, "Open Sans", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-md-2 {
+  width: 25%;
+}
+.col-md-3 {
+  width: 25%;
+}
+.col-md-6 {
+  width: 50%;
+}
+
+.col-md-12 {
+  width: 100%;
+}
+
+.col-md-7 {
+  width: 58.33333%;
+}
+
+.search {
+  text-align: end;
+  margin-left: 15px;
+}
+
+header {
+  background-color: #1d2126;
+}
+.row {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.link {
+  text-align: center;
+  display: flex;
+}
+
+.link a {
+  text-decoration: none;
+  color: #9ba4a4;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.link a:first-child {
+  color: #23b7a3;
+}
+
+.nav-links {
+  margin-right: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: 2px solid #1d2126;
+}
+
+.nav-links:last-child {
+  margin-right: 0;
+}
+
+.link a:hover {
+  border: 2px solid #5a6068;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+.link a:active {
+  border: 2px solid #23b7a3;
+  border-radius: 4px;
+}
+
+.active {
+  border: 2px solid #23b7a3;
+  border-radius: 4px;
+}
+
+.inp {
+  width: 194px;
+  padding-right: 42px;
+  height: 34px;
+  border: 2px solid #5a6068;
+  border-radius: 4px;
+  background-color: transparent;
+  padding-top: 4px;
+  color: white;
+}
+
+::-webkit-input-placeholder {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 8px;
+  color: #a4aead;
+}
+:-moz-placeholder {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 8px;
+  color: #a4aead;
+}
+::-moz-placeholder {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 8px;
+  color: #a4aead;
+}
+:-ms-input-placeholder {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 8px;
+  color: #a4aead;
+}
+
+input[type="submit"] {
+  position: relative;
+  background: url(blog/icon1.png) no-repeat 50% 50%;
+  border: none;
+  cursor: pointer;
+  width: 17px;
+  height: 16px;
+  top: 3px;
+  right: 40px;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
+}
+
+/* slider */
+
+.slider {
+  display: flex;
+  align-items: center;
+  height: 660px;
+  background: url(blog/img2.png) no-repeat 50% 50%;
+}
+
+.container-main {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.main-content {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.main-h1 {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-family: "Quattrocento Sans", sans-serif;
+  color: #f2f2f4;
+  margin-bottom: 30px;
+}
+
+.main-text {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: #f2f2f4;
+  font-weight: lighter;
+  margin-bottom: 40px;
+}
+
+.bnt-main {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.btn-more {
+  width: 124px;
+  height: 44px;
+  text-transform: uppercase;
+  background: none;
+  border: 2px solid white;
+  font-size: 14px;
+  font-family: "Quattrocento Sans", sans-serif;
+  color: #ffffff;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.btn-more:hover {
+  background-color: #23b7a3;
+  border: none;
+}
+
+/* Media */
+
+@media screen and (max-width: 575px) {
+  .search {
+    display: none;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -15px;
+    margin-right: -15px;
+    height: 100%;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .col-md-6 {
+    width: 100%;
+  }
+
+  .logo {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .col-md-6 .link {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .link {
+    display: flex;
+    overflow-x: scroll;
+    justify-content: space-between;
+  }
+
+  .col-md-2,
+  .col-md-7 {
+    width: 100%;
+  }
+
+  .bnt-main {
+    display: flex;
+  }
+
+  .btn-more {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
