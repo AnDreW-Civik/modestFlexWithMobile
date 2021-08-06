@@ -137,7 +137,7 @@ header {
 
 input[type="submit"] {
   position: relative;
-  background: url(blog/icon1.png) no-repeat 50% 50%;
+  background: url(icon1.png) no-repeat 50% 50%;
   border: none;
   cursor: pointer;
   width: 17px;
